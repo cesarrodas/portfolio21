@@ -27,7 +27,7 @@ html, body {
 #city {
   position: absolute;
   z-index: -1;
-  height: 50%;
+  /* height: 50%; */
   left: -2px;
   top: 20%;
 }
@@ -38,8 +38,14 @@ html, body {
 }
 
 .button {
-  background-color: green;
-  padding: 20px;
+  background-color: lightgray;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 50px;
+  height: 50px;
+  width: 300px;
+  padding-left: 65px;
+  text-align: left;
   transform: skewX(-20deg);  
 }
 
@@ -53,6 +59,16 @@ html, body {
 @media (min-width: 768px) {}
 
 @media (min-width: 992px) {
+
+  #menu {
+    background-color: rebeccapurple;
+    width: 16.66%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   #sky {
     position: absolute;
     width: 100%;
