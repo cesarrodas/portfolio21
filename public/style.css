@@ -38,7 +38,7 @@ html, body {
 }
 
 .button {
-  background-color: lightgray;
+  background-color: #E5E5E5;
   font-weight: bold;
   font-size: 14px;
   line-height: 50px;
@@ -46,7 +46,12 @@ html, body {
   width: 300px;
   padding-left: 65px;
   text-align: left;
-  transform: skewX(-20deg);  
+  transform: skewX(-20deg);
+  stroke: #666666;
+  stroke-width: 3px; 
+  color: #5BA5FE;
+  margin: 5px;
+  
 }
 
 .button span {
@@ -61,12 +66,20 @@ html, body {
 @media (min-width: 992px) {
 
   #menu {
-    background-color: rebeccapurple;
+    background-color: transparent;
     width: 16.66%;
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-button-container {
+    height: 30%;
+    /* display: flex;
+    flex-wrap: wrap; */
   }
 
   #sky {
@@ -77,6 +90,15 @@ html, body {
     left: 0;
     top: 0;
   }
+
+  @keyframes moveCity {
+    0% {
+      top: 20%;
+    }
+    100% {
+      top: 10%;
+    }
+  }
   
   #city {
     width: 100%;
@@ -85,6 +107,10 @@ html, body {
     width: 101%;
     left: -2px;
     top: 20%;
+    animation-name: moveCity;
+    animation-duration: 2s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
   }
 }
 
