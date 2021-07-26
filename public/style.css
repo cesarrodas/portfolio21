@@ -83,6 +83,39 @@ html, body {
   display: inline-block;
 }
 
+/* About Page */
+
+#about {
+  background-color: #EDC1C1;
+  height: 100vh;
+}
+
+#about h1 {
+  margin: 0;
+}
+
+.menu-red {
+  background-color: #D67171;
+}
+
+/* Projects Page */
+
+#projects {
+  background-color: #AEC29E;
+  height: 100vh;
+}
+
+#projects h1 {
+  margin: 0;
+}
+
+/* Contact page */
+
+#contact {
+  background-color: #D5A764;
+  height: 100vh;
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
@@ -94,7 +127,7 @@ html, body {
     font-size: 24px;
     color: white;
     position: absolute;
-    left: 24%;
+    left: 25%;
     top: 10%;
   }
   
@@ -104,7 +137,7 @@ html, body {
     color: white;
     position: absolute;
     left: 20%;
-    top: 139px;
+    top: calc(10% + 30px);
   }
   
   .name-description {
@@ -112,11 +145,11 @@ html, body {
     color: white;
     font-size: 24px;
     position: absolute;
-    left: 22%;
-    top: 26%;
+    left: 21%;
+    top: calc(10% + 130px);
   }
 
-  #menu {
+  .menu {
     background-color: transparent;
     width: 16.66%;
     height: 100%;
@@ -135,10 +168,11 @@ html, body {
     top: 120px;
   }
 
-  #menu-button-container {
+  .menu-button-container {
     height: 30%;
     width: 100%;
     position: relative;
+    left: 20px;
     /* display: flex;
     flex-wrap: wrap; */
   }
@@ -175,6 +209,89 @@ html, body {
     animation-delay: 500ms;
     animation-fill-mode: forwards;
   }
+
+  /* About Page */
+
+  #title-background {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    background-color: #DD8888;
+  }
+
+  #title-background {
+    z-index: 1;
+  }
+
+  .menu-red {
+    background-color: #D67171;
+  }
+
+  #about-decor-one {
+    position: absolute;
+    height: 300px;
+    width: 930px;
+    left: -183px;
+    top: 232px;
+    background-color: #D67171;
+  }
+
+  #about-decor-two {
+    position: absolute;
+    height: 449px;
+    width: 533px;
+    left: 427px;
+    top: 403px;
+    background-color: #D67171;
+  }
+
+  #about-text-bg {
+    position: absolute;
+    height: 342px;
+    width: 533px;
+    left: 320px;
+    top: 300px;
+    background-color: #E19898;
+  }
+}
+
+/* Projects Page */
+
+#projects-title-bg {
+  background-color: #E2E9DD;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+#projects-decor-one {
+  background-color: #E2E9DD;
+  height: 536px;
+  position: absolute;
+  top: 182px;
+  left: -183px;
+  width: 1250px;
+}
+
+/* Contact Page */
+
+#contacts-title-bg {
+  background-color: #EAD4B3;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+#contacts-decor-one {
+  background-color: #EAD4B3;
+  height: 536px;
+  position: absolute;
+  top: 182px;
+  left: -183px;
+  width: 1250px;
 }
 
 @media (min-width: 1200px) {
